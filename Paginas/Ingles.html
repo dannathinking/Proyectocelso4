@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro con Imagen, Texto, Botones, Banner y Carrusel</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+/* Burbujas */
+        .burbuja {
+            position: absolute;
+            background-color: rgba(18, 144, 128, 0.5);
+            border-radius: 50%;
+            animation: burbujear 20s infinite ease-in-out;
+        }
+        
+        @keyframes burbujear {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-100% * 5)); } /* Desliza todas las imágenes */
+        }
+
+	.imagen-cuadro {
+            width: 700px;
+            height: 450px;
+            border: 2px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+	     margin-left: 300px;
+            margin-right: 300px;
+        }
+
+        .imagen-cuadro img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+	.audio {
+            margin-left: 400px; 
+            margin-right: 400px;
+            }
+
+</style>	
+</head>
+<body>
+    <div class ="Burbujas">
+<!-- Burbujas -->
+    <div class="burbuja" style="width: 20px; height: 20px; top: 90%; left: 10%;"></div>
+    <div class="burbuja" style="width: 30px; height: 30px; top: 85%; left: 25%;"></div>
+    <div class="burbuja" style="width: 40px; height: 40px; top: 80%; left: 50%;"></div>
+    <div class="burbuja" style="width: 25px; height: 25px; top: 75%; left: 70%;"></div>
+    <div class="burbuja" style="width: 35px; height: 35px; top: 70%; left: 90%;"></div>
+    </div>
+
+
+	<div class="imagen-cuadro">
+	<p> (Diego)
+<br>
+	    Hello everyone! Today, I’ll explain the structure of our webpage. This site is designed to present       	    educational content in an organized and interactive way.
+
+	    At the top, we have a fixed banner with a gradient background and a school logo. This keeps the identity  	    of the website visible at all times.
+<br>
+	    (Danna)
+<br>
+	    Below, there's a button panel that serves as the main navigation. Each button links to a different subject 	    page, like Physics, Chemistry, English, and more.
+
+	    Moving down, we have the content section. This includes an image box displaying the school logo and a text 	    section meant for an introduction or a welcome message.
+<br>
+	    (Daniel)
+<br>
+	    The layout is responsive, meaning that on small screens, content stacks in a column format, while on 	    larger screens, elements arrange in rows for a better experience.
+
+	    Further down, we find a carousel that showcases multiple images, adding a dynamic touch to the site. Users 	    can navigate through the images using arrows.
+<br>
+	    (Celso)
+<br>
+	    Lastly, to enhance the design, we’ve included floating bubbles that animate in the background, creating a 	    modern and engaging visual effect.
+
+	    That’s a quick overview of our webpage’s structure! It’s clean, interactive, and mobile-friendly. Thank 	    you for watching!
+	</p>
+</div>
+ 	<div class="audio">
+	<audio src="" controls auto play loop>
+	<code> audio </code>
+	</audio> 
+</div>
+</body>
+</html>

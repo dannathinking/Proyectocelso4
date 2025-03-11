@@ -1,0 +1,130 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind crepes</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+	body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1e5;
+            color: #333;
+        }
+        header {
+            background-color: #8d6e63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+        }
+        .menu {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            margin-top: 20px;
+            text-align: left;
+        }
+        h2 {
+            color: #8d6e63;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+
+/* Burbujas */
+        .burbuja {
+            position: absolute;
+            background-color: rgba(18, 144, 128, 0.5);
+            border-radius: 50%;
+            animation: burbujear 20s infinite ease-in-out;
+        }
+        
+        @keyframes burbujear {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-100% * 5)); } /* Desliza todas las imágenes */
+            }
+
+</style>	
+</head>
+<body>
+
+	    <header>
+        Bienvenido a Mastermind Crepes
+    </header>
+
+    <div class="container">
+        <p>Descubre el arte de las crepas con combinaciones dulces y saladas que deleitarán tu paladar.</p>
+        <img src="img_crepas.png" alt="Deliciosas crepas de Mastermind Crepes">
+
+        <div class="menu">
+            <h2>🥞 Crepas Dulces</h2>
+            <ul>
+                <li><b>Nutella Supreme</b> – Crepa con Nutella, fresas y plátano.</li>
+                <li><b>Oreo Dream</b> – Crepa con crema de avellanas y Oreo.</li>
+                <li><b>Choco-Bomb</b> – Crepa de chocolate con brownie.</li>
+                <li><b>Dulce Tentación</b> – Crepa con dulce de leche y nueces.</li>
+                <li><b>Mermelada Bliss</b> – Crepa con mermelada de frutos rojos y queso crema.</li>
+            </ul>
+
+            <h2>🧀 Crepas Saladas</h2>
+            <ul>
+                <li><b>Clásica Jamón y Queso</b> – Crepa con jamón de pavo y queso suizo.</li>
+                <li><b>Mastermind Chicken</b> – Crepa con pollo, espinaca y queso crema.</li>
+                <li><b>Italiana</b> – Crepa con mozzarella, jitomate seco y pesto.</li>
+                <li><b>Mexicana</b> – Crepa con chorizo, frijoles y queso Oaxaca.</li>
+                <li><b>Veggie Delight</b> – Crepa con champiñones, pimientos y queso de cabra.</li>
+            </ul>
+
+            <h2>☕ Bebidas</h2>
+            <ul>
+                <li>Café americano</li>
+                <li>Espresso</li>
+                <li>Capuchino</li>
+                <li>Malteadas (vainilla, fresa o chocolate)</li>
+                <li>Jugos naturales (naranja, zanahoria, verde detox)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class ="Burbujas">
+<!-- Burbujas -->
+    <div class="burbuja" style="width: 20px; height: 20px; top: 90%; left: 10%;"></div>
+    <div class="burbuja" style="width: 30px; height: 30px; top: 85%; left: 25%;"></div>
+    <div class="burbuja" style="width: 40px; height: 40px; top: 80%; left: 50%;"></div>
+    <div class="burbuja" style="width: 25px; height: 25px; top: 75%; left: 70%;"></div>
+    <div class="burbuja" style="width: 35px; height: 35px; top: 70%; left: 90%;"></div>
+    </div>
+</body>
+</html>

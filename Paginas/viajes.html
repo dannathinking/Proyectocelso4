@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cel’s Travel World 🌍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .destinos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .destino {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        .destino img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .precio {
+            font-size: 20px;
+            color: #28a745;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .boton-reservar {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .boton-reservar:hover {
+            background-color: #d84315;
+        }
+    </style>
+</head>
+<body>
+
+    <header>🌍 Cel’s Travel World - Viaja con nosotros ✈️</header>
+
+    <div class="container">
+        <p class="intro">
+            Bienvenido a **Cel’s Travel World**, tu agencia de viajes de confianza.  
+            Explora los mejores destinos al mejor precio. ¡Reserva tu aventura hoy mismo!
+        </p>
+
+        <h2>🌎 Destinos Populares</h2>
+
+        <div class="destinos">
+
+            <div class="destino">
+                <img src="https://via.placeholder.com/300x200" alt="París">
+                <h3>París, Francia 🇫🇷</h3>
+                <p>La ciudad del amor y la Torre Eiffel.</p>
+                <p class="precio">$1,200 USD</p>
+                <button class="boton-reservar" onclick="reservar('París')">Reservar Ahora</button>
+            </div>
+
+            <div class="destino">
+                <img src="https://via.placeholder.com/300x200" alt="Roma">
+                <h3>Roma, Italia 🇮🇹</h3>
+                <p>Descubre la historia y la mejor comida.</p>
+                <p class="precio">$1,500 USD</p>
+                <button class="boton-reservar" onclick="reservar('Roma')">Reservar Ahora</button>
+            </div>
+
+            <div class="destino">
+                <img src="https://via.placeholder.com/300x200" alt="Maldivas">
+                <h3>Maldivas 🏝️</h3>
+                <p>Playas paradisíacas y aguas cristalinas.</p>
+                <p class="precio">$2,300 USD</p>
+                <button class="boton-reservar" onclick="reservar('Maldivas')">Reservar Ahora</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function reservar(destino) {
+            alert("¡Has reservado un viaje a " + destino + "! 📅✈️");
+        }
+    </script>
+
+</body>
+</html>
